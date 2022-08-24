@@ -1,0 +1,12 @@
+:root{
+    --cor-de-fundo:#E7EAF2;
+}
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box; /* calcula o tamanho da borda junto com o padding */
+}
+
+.form{
+    background-color: var(--cor-de-fundo);
+}

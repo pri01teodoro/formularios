@@ -2,13 +2,15 @@
     --cor-primaria:#1C6E8C;
     --cor-primaria-dark:#274156;
     --cor-texto:#605856;
+    --cor-borda:#605856;
     --cor-fundo:#FBFCFF;
     --cor-texto-secundario:#FBFCFF;
 
 
 }
-*{
+*{/* CSS reset */
     margin: 0; padding: 0;
+    box-sizing: border-box; /* calcula o tamanho da borda junto com o padding */
 }
 
 .form{
@@ -25,10 +27,38 @@
 .input{
     padding: 10px;
     margin-top: 10px;
+    width: 280px;
+    border: 1px var(--cor-borda) solid;
 }
 
 .cabecalho{
     background-color: var(--cor-primaria);
     color: var(--cor-texto-secundario);
     padding: 10px;
+}
+
+.botao{
+    background-color: var(--cor-primaria-dark);
+    color: var(--cor-texto-secundario);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.atendimento{
+    width: 280px;
+    height: 160px;
+    resize: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px var(--cor-borda) solid;
+}
+
+.select{
+    width: 280px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--cor-fundo);
+    border: 1px var(--cor-borda) solid;
 }

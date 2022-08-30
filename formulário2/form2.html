@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <title>Criar conta</title>
@@ -7,25 +7,28 @@
 </head>
 <body>
     <div>
-        <h1>Criar conta</h1>
+        <h1 class="titulo">Criar conta</h1>
         <h2>Já tem uma conta ? Entrar</h2>
     </div>
+    <form class="form">
+        <div class="box">
+            <label class="label" for="nome">NOME</label>
+            <input class="input" type="text" id="nome"
+            placeholder="Priscila Teodoro"/>
+        </div>
 
-    <div>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome"
-        placeholder="Ex.: Priscila Teodoro"/>
-    </div>
+        <div class="box">
+            <label class="label" for="email">E-MAIL</label>
+            <input class="input" type="email" id="e-mail"
+            placeholder="priscila_teodoro@gmail.com">
+        </div>
 
-    <div>
-        <label for="email">E-mail</label>
-        <input type="email" id="e-mail"
-        placeholder="priscila_teodoro@gmail.com">
-    </div>
+        <div class="box">
+            <label class="label" for="senha">SENHA</label>
+            <input class="input" type="password" id="senha" minlength="8" required>
+        </div>
 
-    <div>
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" minlength="8" required>>
-    </div>
+        <input type="submit" value="Criar conta" class="botao"> 
+    </form>
 </body>
 </html>

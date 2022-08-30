@@ -1,5 +1,7 @@
 :root{
     --cor-de-fundo:#E7EAF2;
+    --cor-texto-label: #718387;
+    --cor-texto-input: #1A1A1A;
 }
 
 *{
@@ -8,5 +10,49 @@
 }
 
 .form{
-    background-color: var(--cor-de-fundo);
+    margin: 24px;
 }
+
+.titulo{
+    font-family: sans-serif;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+
+.box{
+    background-color: var(--cor-de-fundo);
+    width: 320px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 16px;
+}
+
+.label{
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.input{
+    background-color: var(--cor-de-fundo);
+    border: none;
+    display: block;
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+::placeholder{
+    color: var(--cor-texto-input);
+}
+
+.botao{
+    background-color: #D3310C;
+    width: 320px;
+    height: 52px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+}
+
